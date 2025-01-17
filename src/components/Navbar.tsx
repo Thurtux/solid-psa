@@ -1,21 +1,17 @@
-import { Component } from "solid-js";
-
-const Navbar: Component = () => {
+const Navbar = () => {
   return (
-    <div class="navbar bg-base-100">
-      <div class="flex-1">
-        <a class="btn btn-ghost normal-case text-xl">Minha Empresa</a>
-      </div>
-      <div class="flex-none">
-        <ul class="menu menu-horizontal px-1">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#services">Serviços</a></li>
-          <li><a href="#plans">Planos</a></li>
-          <li><a href="#contact">Contato</a></li>
-        </ul>
-      </div>
-    </div>
+    <nav class="bg-white shadow flex items-center justify-between px-6 py-4">
+      <div class="font-bold text-lg">SolidPSA</div>
+      <ul class="hidden md:flex space-x-8 text-gray-700">
+        <li><a href="#" class="hover:text-blue-600">Products</a></li>
+        <li><a href="#" class="hover:text-blue-600">Lens Store</a></li>
+        <li><a href="#" class="hover:text-blue-600">Company</a></li>
+        <li><a href="#" class="hover:text-blue-600">Resources</a></li>
+      </ul>
+      <button class="text-blue-600 border border-blue-600 px-4 py-2 rounded-lg hover:bg-blue-600 hover:text-white">
+        Log In
+      </button>
+    </nav>
   );
 };
-
 export default Navbar;

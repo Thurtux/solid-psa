@@ -2,7 +2,7 @@ import { Component } from "solid-js";
 
 const Services: Component = () => {
   return (
-    <section id="services" class="p-10 bg-base-200">
+    <section id="services" class="p-10 bg-base-400">
       <h2 class="text-3xl font-bold">Serviços</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
         <div class="card shadow-lg">
